@@ -335,4 +335,58 @@ h3 {
   -webkit-transform-origin: left bottom;
           transform-origin: left bottom;
 }
+
+.hero-container {
+  margin-top: 40px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  grid-row-gap: 40px;
+      grid-template-areas: "A A A A   A A A B   B B B B" "C C C C   1 1 D D   D D D D" "E E E 0   1 1 D D   D D D D";
+}
+
+.hero-container .hero__title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-area: A;
+}
+
+.hero-container .hero__btn {
+  -ms-grid-row: 1;
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 5;
+  grid-area: B;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.hero-container .hero__text {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: C;
+}
+
+.hero-container .hero__text p {
+  font-size: 20px;
+}
+
+.hero-container .hero__img-big {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 6;
+  grid-area: D;
+}
+
+.hero-container .hero__img-small {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: E;
+}
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,32 @@
+.hero-container {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-row-gap: 40px;
+      grid-template-areas:
+            "A A A A   A A A B   B B B B"
+            "C C C C   1 1 D D   D D D D"
+            "E E E 0   1 1 D D   D D D D";
+
+      .hero__title {
+            grid-area: A;
+      }
+      .hero__btn {
+            grid-area: B;
+            align-self: flex-end;
+            justify-self: end;
+      }
+      .hero__text {
+            grid-area: C;
+
+            p {
+                  font-size: 20px;
+            }
+      }
+      .hero__img-big {
+            grid-area: D;
+      }
+      .hero__img-small {
+            grid-area: E;
+      }
+}
