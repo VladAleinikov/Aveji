@@ -12,11 +12,12 @@
             }
       }
       .header__tel {
-            position: relative;
+            flex: 2;
 
             a {
+                  display: block;
                   position: relative;
-                  right: 0;
+                  text-align: end;
 
                   &::after {
                         content: "";
