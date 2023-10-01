@@ -1,0 +1,52 @@
+.input-blok {
+      position: relative;
+      width: 100%;
+      height: 30px;
+      margin: 8px;
+      margin-top: 16px;
+
+      label {
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: $main;
+            font-size: 16px;
+            transition: 0.5s;
+      }
+      input {
+            height: 100%;
+            width: 100%;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid $main;
+            transition: 0.5s;
+
+            &:focus {
+                  border-bottom: 1px solid $accent;
+
+                  & ~ label {
+                        top: -10px;
+                        left: -5px;
+                        font-size: 12px;
+                  }
+            }
+            &.error {
+                  border-bottom: 1px solid $form-error;
+
+                  & ~ label {
+                        top: -10px;
+                        left: -5px;
+                        font-size: 12px;
+                  }
+            }
+            &.success {
+                  border-bottom: 1px solid $form-success;
+
+                  & ~ label {
+                        top: -10px;
+                        left: -5px;
+                        font-size: 12px;
+                  }
+            }
+      }
+}

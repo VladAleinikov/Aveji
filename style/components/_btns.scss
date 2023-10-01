@@ -1,0 +1,61 @@
+.btn-primary {
+      cursor: pointer;
+      width: fit-content;
+      height: fit-content;
+      padding: 12px 20px;
+      margin: 8px;
+      text-align: center;
+      color: $white;
+      background: $main;
+      font-size: 16px;
+      line-height: 140%;
+      transition: 0.5s;
+
+      &:hover {
+            background: $accent;
+            color: $main;
+      }
+      &:active {
+            background: #cbc6b2;
+      }
+      &.disabled {
+            color: rgba($color: $white, $alpha: 0.5);
+            background: rgba($color: $main, $alpha: 0.5);
+      }
+}
+.btn-secondary {
+      cursor: pointer;
+      position: relative;
+      width: fit-content;
+      height: fit-content;
+      margin: 8px;
+      color: $main;
+      font-size: 18px;
+      font-weight: 400;
+      transition: 0.5s;
+
+      &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: $main;
+            transition: 0.5s;
+      }
+      &:hover {
+            color: $accent;
+
+            &::after {
+                  background: $accent;
+            }
+      }
+      &:active{     
+            color: #CBC6B2;
+
+            &::after {
+                  background: #CBC6B2;
+            }
+      }
+}
