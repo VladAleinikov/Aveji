@@ -205,4 +205,10 @@ h3 {
   left: -5px;
   font-size: 12px;
 }
+
+.container {
+  max-width: 1440px;
+  padding: 0 2%;
+  margin: auto;
+}
 /*# sourceMappingURL=main.css.map */
