@@ -3,8 +3,8 @@
       display: grid;
       grid-template-columns: repeat(12, 1fr);
       grid-template-areas:
-            "A A A A A A  B B B B B"
-            "- - - - - -  C C C C C";
+            "A A A A A A  B B B B B B"
+            "- - - - - -  C C C C C C";
 
       .about__title {
             grid-area: A;

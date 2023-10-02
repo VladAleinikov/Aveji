@@ -1,0 +1,46 @@
+.steps-container {
+      margin-top: 144px;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-column: 20px;
+      grid-template-areas:
+            "A A A A A A  B B B B B B"
+            "- - - - - -  C C C C C C";
+
+      .steps__title {
+            grid-area: A;
+      }
+      .steps__text {
+            grid-area: B;
+            margin-bottom: 44px;
+
+            p{
+                  margin-top: 22px;
+                  max-width: 325px;
+            }
+      }
+      .steps__list{
+            @include flex-col;
+            align-items: center;
+            gap: 24px;
+            grid-area: C;
+
+            .steps__item{
+                  width: 100%;
+                  @include flex-row;
+                  justify-content: space-between;
+                  align-items: start;
+                  gap: 20px;
+                  border-bottom: 1px solid $black;
+
+                  h3{
+                        width: 50%;
+                  }
+                  p{
+                        width: 50%;
+                        margin-top: 12px;
+                        margin-bottom: 24px;
+                  }
+            }
+      }
+}
