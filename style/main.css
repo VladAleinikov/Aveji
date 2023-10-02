@@ -368,4 +368,56 @@ h3 {
   width: 50%;
   margin-top: 12px;
   margin-bottom: 24px;
+}
+
+.projects-container {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: start;
+  gap: 40px;
+}
+.projects-container .projects__list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.projects-container .projects__list .projects__item {
+  cursor: pointer;
+  position: relative;
+  width: 445px;
+  height: 580px;
+  overflow: hidden;
+}
+.projects-container .projects__list .projects__item .item__description {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  width: 100%;
+  height: 66px;
+  left: 0;
+  bottom: -66px;
+  background: rgba(33, 37, 41, 0.5);
+  transition: 0.5s;
+}
+.projects-container .projects__list .projects__item .item__description p {
+  color: #fff;
+}
+.projects-container .projects__list .projects__item .item__description img {
+  width: 12px;
+  height: 12px;
+}
+.projects-container .projects__list .projects__item:hover .item__description {
+  bottom: 0;
 }/*# sourceMappingURL=main.css.map */
