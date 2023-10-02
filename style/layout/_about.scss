@@ -1,0 +1,37 @@
+.about-conatiner {
+      margin-top: 120px;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-areas:
+            "A A A A A A  B B B B B"
+            "- - - - - -  C C C C C";
+
+      .about__title {
+            grid-area: A;
+
+            h2 {
+                  max-width: 570px;
+            }
+      }
+      .about__text {
+            @include flex-col;
+            align-items: start;
+            gap: 16px;
+            grid-area: B;
+            margin-bottom: 44px;
+
+            p {
+                  max-width: 450px;
+            }
+      }
+      .about__info {
+            @include flex-col;
+            align-items: start;
+            gap: 24px;
+            grid-area: C;
+
+            .info__item{
+                  max-width: 150px;
+            }
+      }
+}
