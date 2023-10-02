@@ -420,4 +420,43 @@ h3 {
 }
 .projects-container .projects__list .projects__item:hover .item__description {
   bottom: 0;
+}
+
+.testimonials-container {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: start;
+  gap: 40px;
+}
+.testimonials-container .testimonials__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.testimonials-container .testimonials__list .testimonials__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+  width: 445px;
+  height: 327px;
+  padding: 40px;
+  border: 1px solid #000;
+}
+.testimonials-container .testimonials__list .testimonials__item img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 12px;
+}
+.testimonials-container .testimonials__list .testimonials__item p {
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
