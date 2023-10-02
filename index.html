@@ -1,55 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aveji</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/logo.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style/main.css" />
+  </head>
 
-<head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Aveji</title>
-      <link rel="shortcut icon" href="./assets/icons/logo.ico" type="image/x-icon">
-      <link rel="stylesheet" href="./style/main.css">
-</head>
-
-<body>
-      <header class="header">
-            <div class="header-container container">
-                  <a href="#" class="header__logo">
-                        <img src="./assets/icons/logo.svg" alt="logo">
-                  </a>
-            <nav class="header__nav">
-                  <a href="#about" class="nav__link">О нас</a>
-                  <a href="#projects" class="nav__link">Проекты</a>
-                  <a href="#materials" class="nav__link">Материалы</a>
-                  <a href="#comments" class="nav__link">Отзывы</a>
-            </nav>
-            <div class="header__tel">
-                  <a href="#">+7 999 999 99 99</a>
-            </div>
-            </div>
-      </header>
-      <main>
-            <section class="hero">
-                  <div class="hero-container container">
-                        <div class="hero__title">
-                              <h1>Эксклюзивная и нестандартная мебель для дома</h1>
-                        </div>
-                        <div class="hero__btn">
-                              <div class="btn-secondary">ЗАКАЗАТЬ ПРОЕКТ</div>
-                        </div>
-                        <div class="hero__text">
-                              <p class="text-normal">
-                                    Мы можем произвести любую мебель для вашего проекта и найти производственное решение любой задумки.
-                              </p>
-                        </div>
-                        <div class="hero__img-big">
-                              <img src="./assets/hero/hero-big.png" alt="hero-big">
-                        </div>
-                        <div class="hero__img-small">
-                              <img src="./assets/hero/hero-small.png" alt="hero-small">
-                        </div>
-                  </div>
-            </section>
-      </main>
-</body>
-<script src="./script/index.js"></script>
-
+  <body>
+    <header class="header">
+      <div class="header-container container">
+        <a href="#" class="header__logo">
+          <img src="./assets/icons/logo.svg" alt="logo" />
+        </a>
+        <nav class="header__nav">
+          <a href="#about" class="nav__link">О нас</a>
+          <a href="#projects" class="nav__link">Проекты</a>
+          <a href="#materials" class="nav__link">Материалы</a>
+          <a href="#comments" class="nav__link">Отзывы</a>
+        </nav>
+        <div class="header__tel">
+          <a href="#">+7 999 999 99 99</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero-container container">
+          <div class="hero__title">
+            <h1>Эксклюзивная и нестандартная мебель для дома</h1>
+          </div>
+          <div class="hero__btn">
+            <div class="btn-secondary">ЗАКАЗАТЬ ПРОЕКТ</div>
+          </div>
+          <div class="hero__text">
+            <p class="text-normal">
+              Мы можем произвести любую мебель для вашего проекта и найти
+              производственное решение любой задумки.
+            </p>
+          </div>
+          <div class="hero__img-big">
+            <img src="./assets/hero/hero-big.png" alt="hero-big" />
+          </div>
+          <div class="hero__img-small">
+            <img src="./assets/hero/hero-small.png" alt="hero-small" />
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="about-conatiner container">
+          <div class="about__title">
+            <h2>Более 5 лет создаем мебель для вашего комфорта</h2>
+          </div>
+          <div class="about__text">
+            <p class="text-normal">
+              Мы — команда профессионалов, которые могут произвести любую мебель
+              для вашего проекта, а также найти производственное решение любой
+              задумки.
+            </p>
+            <p class="text-normal">
+              Наша основная цель — реализовывать самые смелые задумки, и делать
+              это качественно и аккуратно.
+            </p>
+            <p class="text-normal">
+              В качестве материалов мы используем натуральные — стекло, дерево,
+              бетон, камень, металл и эпоксидную смолу.
+            </p>
+          </div>
+          <ul class="about__info">
+            <li class="info__item">
+                  <h3>1 год</h3>
+                  <p class="text-normal">
+                        гарантии на всю продукцию
+                  </p>
+            </li>
+            <li class="info__item">
+                  <h3>300+</h3>
+                  <p class="text-normal">
+                        выполненных проектов
+                  </p>
+            </li>
+            <li class="info__item">
+                  <h3>1 год</h3>
+                  <p class="text-normal">
+                        срок производства
+                  </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="./script/index.js"></script>
 </html>
