@@ -1,0 +1,43 @@
+.footer-container {
+      margin-top: 120px;
+      margin-bottom: 16px;
+      @include flex-row;
+      justify-content: space-between;
+      align-items: end;
+
+      .footer__info {
+            @include flex-col;
+            align-items: start;
+            gap: 4px;
+      }
+      .footer__social {
+            @include flex-row;
+            gap: 40px;
+
+            p {
+                  cursor: pointer;
+                  position: relative;
+
+                  &::after {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        width: 100%;
+                        height: 1px;
+                        background: $main;
+                        transform: scaleX(0);
+                        transition: transform 0.5s;
+                        transform-origin: right bottom;
+                  }
+                  &:hover::after {
+                        transform: scaleX(1);
+                        transform-origin: left bottom;
+                  }
+            }
+      }
+      .footer__info p,
+      .footer__social p {
+            text-transform: uppercase;
+      }
+}

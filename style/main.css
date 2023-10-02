@@ -254,6 +254,56 @@ h3 {
   transform-origin: left bottom;
 }
 
+.footer-container {
+  margin-top: 120px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  align-items: end;
+}
+.footer-container .footer__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: start;
+  gap: 4px;
+}
+.footer-container .footer__social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.footer-container .footer__social p {
+  cursor: pointer;
+  position: relative;
+}
+.footer-container .footer__social p::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: #212529;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+  transform-origin: right bottom;
+}
+.footer-container .footer__social p:hover::after {
+  transform: scaleX(1);
+  transform-origin: left bottom;
+}
+.footer-container .footer__info p,
+.footer-container .footer__social p {
+  text-transform: uppercase;
+}
+
 .hero-container {
   margin-top: 40px;
   display: grid;
