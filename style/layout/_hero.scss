@@ -30,3 +30,28 @@
             grid-area: E;
       }
 }
+@media (max-width: 768px) {
+      .hero-container {
+            @include flex-col;
+            gap: 0;
+
+            .hero__title {
+                  margin-bottom: 20px;
+            }
+            .hero__btn{
+                  order: 1;
+                  align-self: flex-start;
+                  margin-bottom: 24px;
+            }
+            .hero__text {
+                  margin-bottom: 24px;
+            }
+            .hero__img-big {
+                  width: 100%;
+                  order: 1;
+            }
+            .hero__img-small {
+                  display: none;
+            }
+      }
+}

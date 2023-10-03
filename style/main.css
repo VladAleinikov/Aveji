@@ -44,7 +44,7 @@ h3 {
   font-weight: 400;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   h1 {
     font-size: 32px;
   }
@@ -438,6 +438,33 @@ h3 {
   grid-area: E;
 }
 
+@media (max-width: 768px) {
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+  .hero-container .hero__title {
+    margin-bottom: 20px;
+  }
+  .hero-container .hero__btn {
+    order: 1;
+    align-self: flex-start;
+    margin-bottom: 24px;
+  }
+  .hero-container .hero__text {
+    margin-bottom: 24px;
+  }
+  .hero-container .hero__img-big {
+    width: 100%;
+    order: 1;
+  }
+  .hero-container .hero__img-small {
+    display: none;
+  }
+}
 .about-conatiner {
   margin-top: 120px;
   display: grid;
