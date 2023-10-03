@@ -14,6 +14,10 @@ body {
   position: relative;
 }
 
+body.hide {
+  overflow-y: hidden;
+}
+
 img {
   width: 100%;
   height: 100%;
@@ -31,19 +35,19 @@ a {
 
 @media (max-width: 768px) {
   .desc {
-    display: none;
+    display: none !important;
   }
   .mobile {
-    display: block;
+    display: block !important;
   }
 }
 
 @media (min-width: 768px) {
   .desc {
-    display: block;
+    display: block !important;
   }
   .mobile {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -470,7 +474,7 @@ h3 {
     width: 100%;
     height: 100vh;
     top: 0;
-    right: -80%;
+    right: -100%;
     -webkit-transition: .5s;
     transition: .5s;
     z-index: 100;
@@ -577,6 +581,41 @@ h3 {
 .footer-container .footer__info p,
 .footer-container .footer__social p {
   text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 24px;
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+  }
+  .footer-container p {
+    max-width: 241px;
+    text-align: center;
+  }
+  .footer-container p span {
+    display: block;
+  }
+  .footer-container .footer__info {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .hero-container {
@@ -1107,7 +1146,7 @@ h3 {
   gap: 20px;
   max-width: 445px;
   width: 100%;
-  height: 327px;
+  min-height: 327px;
   padding: 40px;
   border: 1px solid #000;
 }
@@ -1215,10 +1254,7 @@ h3 {
             align-items: center;
   }
   .form-container form {
-    -ms-grid-row: 1;
-    -ms-grid-column: 7;
-    -ms-grid-column-span: 5;
-    grid-area: B;
+    width: 100%;
   }
   .form-container form h2 {
     margin-bottom: 20px;

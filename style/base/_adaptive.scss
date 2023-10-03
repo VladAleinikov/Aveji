@@ -1,16 +1,16 @@
 @media (max-width: 768px) {
       .desc{
-            display: none ;
+            display: none !important;
       }
       .mobile{
-            display: block;
+            display: block !important;
       }
 }
 @media (min-width: 768px) {
       .desc{
-            display: block;
+            display: block !important; 
       }
       .mobile{
-            display: none;
+            display: none !important;
       }
 }

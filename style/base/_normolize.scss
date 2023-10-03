@@ -10,6 +10,10 @@
 }
 body {
       position: relative;
+
+      &.hide{
+            overflow-y: hidden;
+      }
 }
 img {
       width: 100%;
