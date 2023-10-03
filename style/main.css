@@ -1196,4 +1196,41 @@ h3 {
 .form-container form .form__apps img {
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .form-container {
+    margin-top: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .form-container form {
+    -ms-grid-row: 1;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 5;
+    grid-area: B;
+  }
+  .form-container form h2 {
+    margin-bottom: 20px;
+  }
+  .form-container form p {
+    margin-bottom: 38px;
+  }
+  .form-container form button {
+    margin-top: 20px;
+  }
+  .form-container form .form__apps {
+    margin-top: 28px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
