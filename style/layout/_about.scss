@@ -30,8 +30,39 @@
             gap: 24px;
             grid-area: C;
 
-            .info__item{
+            .info__item {
                   max-width: 150px;
+            }
+      }
+}
+
+@media (max-width: 768px) {
+      .about-conatiner {
+            margin-top: 48px;
+            @include flex-col;
+            align-items: start;
+
+            .about__title {
+                  margin-bottom: 20px;
+
+                  h2 {
+                        max-width: 100%;
+                  }
+            }
+            .about__text {
+                  margin-bottom: 38px;
+
+                  p {
+                        max-width: 100%;
+                  }
+            }
+            .about__info {
+                  gap: 20px;
+                  grid-area: C;
+
+                  .info__item {
+                        max-width: 150px;
+                  }
             }
       }
 }
