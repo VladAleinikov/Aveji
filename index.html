@@ -15,18 +15,24 @@
   <body>
     <header class="header">
       <div class="header-container container">
-        <a href="#" class="header__logo">
+        <div class="header__logo">
           <img src="./assets/icons/logo.svg" alt="logo" />
-        </a>
-        <nav class="header__nav">
+        </div>
+        <nav class="header__nav" id="header__nav">
           <a href="#about" class="nav__link">О нас</a>
           <a href="#projects" class="nav__link">Проекты</a>
           <a href="#materials" class="nav__link">Материалы</a>
           <a href="#testimonials" class="nav__link">Отзывы</a>
         </nav>
-        <div class="header__tel">
+        <div class="header__tel" id="header__tel">
           <a href="#">+7 999 999 99 99</a>
         </div>
+        <div class="header__burger" id="header__burger">
+          <div class="burger__line"></div>
+          <div class="burger__line"></div>
+          <div class="burger__line"></div>
+        </div>
+        <div class="header__modal-bg" id="header__modal-bg"></div>
       </div>
     </header>
     <main>
@@ -272,5 +278,5 @@
       </div>
     </footer>
   </body>
-  <script src="./script/index.js"></script>
+  <script src="./index.js"></script>
 </html>

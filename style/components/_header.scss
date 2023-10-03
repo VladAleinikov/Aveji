@@ -1,4 +1,5 @@
 .header-container {
+      position: relative;
       height: fit-content;
       margin-top: 12px;
       @include flex-row;
@@ -34,6 +35,99 @@
                   &:hover::after {
                         transform: scaleX(1);
                         transform-origin: left bottom;
+                  }
+            }
+      }
+      .header__burger {
+            cursor: pointer;
+            display: none;
+            position: absolute;
+            width: 24px;
+            height: 12px;
+            border-radius: 100%;
+            right: 2%;
+            top: calc(50% - 6px);
+            z-index: 100;
+
+            .burger__line {
+                  position: absolute;
+                  width: 100%;
+                  height: 1px;
+                  background: $black;
+                  transition: 0.3s;
+
+                  &:nth-child(1) {
+                        top: 0;
+                  }
+                  &:nth-child(2) {
+                        top: 50%;
+                  }
+                  &:last-child {
+                        width: 60%;
+                        bottom: 0;
+                  }
+            }
+
+            &.active {
+                  justify-content: center;
+                  .burger__line {
+                        &:nth-child(1) {
+                              top: 50%;
+                              transform: rotate(45deg);
+                        }
+                        &:nth-child(2) {
+                              transform: rotate(-45deg);
+                        }
+                        &:last-child {
+                              opacity: 0;
+                        }
+                  }
+            }
+      }
+      .header__modal-bg{
+            display: none;
+      }
+}
+
+@media (max-width: 768px) {
+      .header-container {
+            margin-top: 8px;
+            align-items: center;
+
+            .header__burger {
+                  display: flex;
+            }
+            .header__tel {
+                  position: fixed;
+                  bottom: 0;
+                  right: -80%;
+                  max-width: 400px;
+                  width: 100%;
+                  height: 30px;
+                  transition: 0.5s;
+                  z-index: 100;
+
+                  &.active {
+                        right: 0;
+                  }
+                  a {
+                        font-size: 20px;
+                        text-align: center;
+                  }
+            }
+            .header__modal-bg{
+                  display: block;
+                  position: fixed;
+                  width: 100%;
+                  height: 100%;
+                  top: 0;
+                  right: -100%;
+                  background: rgba($color: $black, $alpha: .7);
+                  transition: .7s;
+                  z-index: 10;
+
+                  &.active{
+                        right: 0;
                   }
             }
       }
