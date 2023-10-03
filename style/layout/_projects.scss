@@ -28,7 +28,7 @@
                         left: 0;
                         bottom: -66px;
                         background: rgba($color: $main, $alpha: 0.5);
-                        transition: .5s;
+                        transition: 0.5s;
 
                         p {
                               color: $white;
@@ -38,8 +38,28 @@
                               height: 12px;
                         }
                   }
-                  &:hover .item__description{
+                  &:hover .item__description {
                         bottom: 0;
+                  }
+            }
+      }
+}
+
+@media (max-width: 768px) {
+      .projects-container {
+            margin-top: 48px;
+            gap: 26px;
+
+            .projects__list {
+                  flex-wrap: nowrap;
+                  overflow-x: scroll;
+
+                  .projects__item {
+                        min-width: 445px;
+
+                        .item__description {
+                              bottom: 0px;
+                        }
                   }
             }
       }

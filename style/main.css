@@ -1011,8 +1011,8 @@ h3 {
   left: 0;
   bottom: -66px;
   background: rgba(33, 37, 41, 0.5);
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .projects-container .projects__list .projects__item .item__description p {
@@ -1026,6 +1026,24 @@ h3 {
 
 .projects-container .projects__list .projects__item:hover .item__description {
   bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    margin-top: 48px;
+    gap: 26px;
+  }
+  .projects-container .projects__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  .projects-container .projects__list .projects__item {
+    min-width: 445px;
+  }
+  .projects-container .projects__list .projects__item .item__description {
+    bottom: 0px;
+  }
 }
 
 .testimonials-container {
