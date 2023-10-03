@@ -14,18 +14,18 @@
             grid-area: B;
             margin-bottom: 44px;
 
-            p{
+            p {
                   margin-top: 22px;
                   max-width: 325px;
             }
       }
-      .steps__list{
+      .steps__list {
             @include flex-col;
             align-items: center;
             gap: 24px;
             grid-area: C;
 
-            .steps__item{
+            .steps__item {
                   width: 100%;
                   @include flex-row;
                   justify-content: space-between;
@@ -33,13 +33,46 @@
                   gap: 20px;
                   border-bottom: 1px solid $black;
 
-                  h3{
+                  h3 {
                         width: 50%;
                   }
-                  p{
+                  p {
                         width: 50%;
                         margin-top: 12px;
                         margin-bottom: 24px;
+                  }
+            }
+      }
+}
+
+@media (max-width: 768px) {
+      .steps-container {
+            margin-top: 63px;
+            @include flex-col;
+            align-items: start;
+
+            .steps__text {
+                  margin-bottom: 28px;
+
+                  p {
+                        margin-top: 26px;
+                        max-width: 100%;
+                  }
+            }
+            .steps__list {
+                  gap: 20px;
+
+                  .steps__item {
+                        @include flex-col;
+                        gap: 20px;
+
+                        h3 {
+                              width: 100%;
+                        }
+                        p {
+                              width: 100%;
+                              margin-bottom: 20px;
+                        }
                   }
             }
       }
